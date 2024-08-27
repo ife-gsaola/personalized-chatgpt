@@ -22,7 +22,7 @@ app = Flask(__name__)
 api_key = os.getenv('OPENAI_API_KEY')
 llm = OpenAI(temperature=0, openai_api_key=api_key)
 
-file_path = './data.txt'
+file_path = 'data.txt'
 loader = TextLoader(file_path, encoding='utf-8')
 
 # Creating the index
