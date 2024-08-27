@@ -1,0 +1,56 @@
+Sumary
+Saola Gbenga Ifeoluwa
+A University of Wolverhampton graduate student skilled in developing and fine-tuning machine learning and deep learning algorithms. As an operations analyst at SecureID LTD, I am adept at optimizing revenue performance through strategic scheduling and dashboard development, resulting in 15% revenue growth and 5% operator performance enhancement. Additionally, I excelled as a data management executive at Ipsos Nigeria LTD, ensuring data quality and leading quality control efforts for various industries, including FMCGs and government agencies. I seek an opportunity to work on industry-based AI projects through internship or fellowships to further enhance my knowledge of how industries implement AI, to further qualify me for employment in the field of AI.
+
+Wolverhampton, Englang, UK
++447780250588
+saolagbengaifeoluwa@gmail.com
+Education
+MSc. Artificial Intelligent
+Ongoing
+University of Wolverhampton
+
+My Masters focus on supervised and unsupervised machine learning, mastering R and Python programming, exploring intelligent agent design, learning project management principles, and delving into ethical AI practices. Currently engaged in innovative projects aimed at applying AI technology to address real-world challenges and contribute to societal well-being.
+
+BEng, Civil Engineering
+2014 - 2019
+Osun State University, Osogbo
+
+Bachelor's Degree in Civil Engineering graduate, focused on structural, transportation, geotechnical, and environmental engineering. Proficient in project management methodologies tailored for engineering projects. Portfolio highlights expertise in structural analysis, transportation planning, and environmental impact assessments, emphasizing sustainable practices. Dedicated to advancing infrastructure development and promoting environmentally conscious engineering solutions.
+
+Professional Experience
+Graduate Student
+2023 - Present
+University of Wolverhampton
+
+Developed and fine-tuned supervised and unsupervised machine learning algorithms.
+Implemented deep learning algorithms with a strong understanding of hyperparameters.
+Conducted in-depth analysis of AI models to optimize performance and accuracy.
+Demonstrated proficiency in AI frameworks and libraries such as TensorFlow, PyTorch, or scikit-learn.
+Completed coursework or projects focused on AI applications in specific domains such as healthcare, finance, or autonomous systems.
+Leveraged AI techniques for data analysis, feature engineering, and model evaluation in academic and research projects.
+Actively participated in AI-related seminars, workshops, or meetups to network with professionals and expand knowledge in the field.
+Operations Analyst
+2021 - 2024
+SecureID LTD, Lagos, Nigeria
+
+Developed and maintained dashboards to monitor Ops revenue performance for insightful decision-making by Management
+Led the analysis and planning of daily, weekly, and monthly production schedules to optimize resource utilization and meet budgetary targets.
+Conducted in-depth assessments of available materials and machine capacity, prioritizing projects based on profitability and market demand dynamics.
+Collaborated closely with sales teams to identify pricing trends and negotiate contracts for projects, ensuring alignment with revenue goals and profitability targets.
+Spearheaded the development and implementation of a comprehensive reporting infrastructure using Excel and Power BI, providing key insights into daily sales revenue, production output, operator performance, and machine efficiency, leading to:
+15% revenue growth in Q1 2023 by aligning sales volume and revenue budget with machine capacity.
+Improved operator schedule adherence and resource allocation.
+Overall operator performance improvement by 5% through data-driven analysis and training initiatives.
+Employed data analysis methodologies to identify and address root causes of machine waste, collaborating with cross-functional teams to implement corrective measures.
+Increased overall customer satisfaction by 10% in Q4 2022 and Q1 2023 by leading surveys and data collection initiatives for internal and external customers, resulting in actionable insights for process improvement.
+Enhanced data accessibility and integrity by implementing a stopgap database for the Units in Operation, streamlining information flow and decision-making.
+Data Management Executive
+2020 - 2021
+Ipsos Nigeria LTD, Lagos, Nigeria
+
+Implemented data quality checks (straight lining, inconsistency, outliers, missing values etc)
+Identified anomalies in data and returned to Market Intelligent Officers for recollection.
+Lead a quality control teams for physical verification of suspicious data collected
+Data Cleaning and wrangling: Validated ad-hoc dataset that were gathered during market surveys, through forensic checks and physical backchecks.
+Handled data for top organizations across different spheres of businesses like FMCGs, Beverages, health and health care products, local and international government agencies, and public health sectors.

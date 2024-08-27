@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e5e5e5;
+        }
+        .chat-container {
+            max-width: 700px;
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+
+        .header-container {
+            max-width: 700px;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+
+        .messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            border-bottom: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        .message {
+            margin-bottom: 15px;
+            line-height: 1.4;
+            font-size: 14px;
+        }
+        .message.user {
+            text-align: right;
+        }
+        .message.bot {
+            text-align: left;
+        }
+        .message p {
+            margin: 0;
+            padding: 10px;
+            border-radius: 12px;
+            display: inline-block;
+            max-width: 80%;
+        }
+
+        .bot-title {
+            text-align: center;
+        }
+        .message.user p {
+            background-color: #007bff;
+            color: #ffffff;
+            border-radius: 12px 12px 0 12px;
+        }
+        .message.bot p {
+            background-color: #e1e1e1;
+            color: #333;
+            border-radius: 12px 12px 12px 0;
+        }
+        .input-container {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            background-color: #ffffff;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #007bff;
+        }
+        button {
+            padding: 12px 20px;
+            margin-left: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="chat-container">
+        <div>
+            <h2 class="bot-title">My Chatbot</h2>
+        </div>
+        <div class="messages" id="messages"></div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script>
+        const messagesDiv = document.getElementById('messages');
+
+        function appendMessage(text, type) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', type);
+            messageDiv.innerHTML = `<p>${text}</p>`;
+            messagesDiv.appendChild(messageDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        async function sendMessage() {
+            const userInput = document.getElementById('user-input');
+            const message = userInput.value.trim();
+
+            if (!message) return;
+
+            appendMessage(message, 'user');
+            userInput.value = '';
+
+            try {
+                const response = await fetch('http://127.0.0.1:5000/query', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ query: message }),
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    appendMessage(data.result, 'bot');
+                } else {
+                    appendMessage(`Error: ${data.error}`, 'bot');
+                }
+            } catch (error) {
+                appendMessage(`An error occurred: ${error.message}`, 'bot');
+            }
+        }
+    </script>
+</body>
+</html>
